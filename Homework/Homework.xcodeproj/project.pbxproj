@@ -10,6 +10,13 @@
 		391EC9FBC51885CD02031BAA /* Pods_Homework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B6F27EE06D79D089A70B16 /* Pods_Homework.framework */; };
 		782CFCC92969C47000661C5A /* SaveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CFCC82969C47000661C5A /* SaveVC.swift */; };
 		782CFCCB2969C49200661C5A /* RecentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CFCCA2969C49200661C5A /* RecentVC.swift */; };
+		782CFCCE2969CBCD00661C5A /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CFCCD2969CBCD00661C5A /* Restaurant.swift */; };
+		782CFCD02969CCC000661C5A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CFCCF2969CCC000661C5A /* Network.swift */; };
+		782CFCD22969CE2B00661C5A /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CFCD12969CE2B00661C5A /* Consts.swift */; };
+		782CFCD42969D11C00661C5A /* RestaurantNetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CFCD32969D11C00661C5A /* RestaurantNetError.swift */; };
+		78321B2A296AB6D4001CA184 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78321B28296AB6D4001CA184 /* RestaurantCell.swift */; };
+		78321B2B296AB6D4001CA184 /* RestaurantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78321B29296AB6D4001CA184 /* RestaurantCell.xib */; };
+		78321B2D296ABF1A001CA184 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78321B2C296ABF1A001CA184 /* UIViewExtension.swift */; };
 		785776862969B96E00F2A739 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785776852969B96E00F2A739 /* Home.storyboard */; };
 		7857768C2969B9F700F2A739 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7857768B2969B9F700F2A739 /* AppStoryboard.swift */; };
 		7857768E2969BA3B00F2A739 /* VCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7857768D2969BA3B00F2A739 /* VCExtension.swift */; };
@@ -30,6 +37,13 @@
 		56B6F27EE06D79D089A70B16 /* Pods_Homework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		782CFCC82969C47000661C5A /* SaveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveVC.swift; sourceTree = "<group>"; };
 		782CFCCA2969C49200661C5A /* RecentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentVC.swift; sourceTree = "<group>"; };
+		782CFCCD2969CBCD00661C5A /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		782CFCCF2969CCC000661C5A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		782CFCD12969CE2B00661C5A /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		782CFCD32969D11C00661C5A /* RestaurantNetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantNetError.swift; sourceTree = "<group>"; };
+		78321B28296AB6D4001CA184 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		78321B29296AB6D4001CA184 /* RestaurantCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantCell.xib; sourceTree = "<group>"; };
+		78321B2C296ABF1A001CA184 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		785776852969B96E00F2A739 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		7857768B2969B9F700F2A739 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		7857768D2969BA3B00F2A739 /* VCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCExtension.swift; sourceTree = "<group>"; };
@@ -66,6 +80,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		782CFCCC2969CB2100661C5A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				782CFCCD2969CBCD00661C5A /* Restaurant.swift */,
+				782CFCD32969D11C00661C5A /* RestaurantNetError.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		78321B27296AB60A001CA184 /* Interested */ = {
+			isa = PBXGroup;
+			children = (
+				785776952969BF4300F2A739 /* InterestedVC.swift */,
+				782CFCC82969C47000661C5A /* SaveVC.swift */,
+				782CFCCA2969C49200661C5A /* RecentVC.swift */,
+				78321B28296AB6D4001CA184 /* RestaurantCell.swift */,
+				78321B29296AB6D4001CA184 /* RestaurantCell.xib */,
+			);
+			path = Interested;
+			sourceTree = "<group>";
+		};
 		785776842969B95700F2A739 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,18 +109,16 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		785776872969B99A00F2A739 /* Controller */ = {
+		785776872969B99A00F2A739 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				78321B27296AB60A001CA184 /* Interested */,
 				7857768F2969BC5700F2A739 /* InitializeTabBarVC.swift */,
 				785776912969BED400F2A739 /* HomeVC.swift */,
 				785776932969BEE800F2A739 /* SearchVC.swift */,
-				785776952969BF4300F2A739 /* InterestedVC.swift */,
 				785776972969BF5300F2A739 /* PersonVC.swift */,
-				782CFCC82969C47000661C5A /* SaveVC.swift */,
-				782CFCCA2969C49200661C5A /* RecentVC.swift */,
 			);
-			path = Controller;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		7857768A2969B9D700F2A739 /* Utils */ = {
@@ -93,6 +126,9 @@
 			children = (
 				7857768D2969BA3B00F2A739 /* VCExtension.swift */,
 				7857768B2969B9F700F2A739 /* AppStoryboard.swift */,
+				782CFCCF2969CCC000661C5A /* Network.swift */,
+				782CFCD12969CE2B00661C5A /* Consts.swift */,
+				78321B2C296ABF1A001CA184 /* UIViewExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -118,8 +154,9 @@
 		785DCBDB2964320A00598822 /* Homework */ = {
 			isa = PBXGroup;
 			children = (
+				782CFCCC2969CB2100661C5A /* Entities */,
 				7857768A2969B9D700F2A739 /* Utils */,
-				785776872969B99A00F2A739 /* Controller */,
+				785776872969B99A00F2A739 /* Presentation */,
 				785776842969B95700F2A739 /* Storyboard */,
 				785DCBDC2964320A00598822 /* AppDelegate.swift */,
 				785DCBDE2964320A00598822 /* SceneDelegate.swift */,
@@ -199,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78321B2B296AB6D4001CA184 /* RestaurantCell.xib in Resources */,
 				785DCBE92964320B00598822 /* LaunchScreen.storyboard in Resources */,
 				785DCBE62964320B00598822 /* Assets.xcassets in Resources */,
 				785776862969B96E00F2A739 /* Home.storyboard in Resources */,
@@ -254,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				782CFCD02969CCC000661C5A /* Network.swift in Sources */,
 				785776942969BEE800F2A739 /* SearchVC.swift in Sources */,
 				782CFCC92969C47000661C5A /* SaveVC.swift in Sources */,
 				7857768C2969B9F700F2A739 /* AppStoryboard.swift in Sources */,
@@ -261,8 +300,13 @@
 				785776962969BF4300F2A739 /* InterestedVC.swift in Sources */,
 				785776902969BC5700F2A739 /* InitializeTabBarVC.swift in Sources */,
 				7857768E2969BA3B00F2A739 /* VCExtension.swift in Sources */,
+				78321B2D296ABF1A001CA184 /* UIViewExtension.swift in Sources */,
+				78321B2A296AB6D4001CA184 /* RestaurantCell.swift in Sources */,
 				785DCBDD2964320A00598822 /* AppDelegate.swift in Sources */,
+				782CFCCE2969CBCD00661C5A /* Restaurant.swift in Sources */,
 				785DCBDF2964320A00598822 /* SceneDelegate.swift in Sources */,
+				782CFCD22969CE2B00661C5A /* Consts.swift in Sources */,
+				782CFCD42969D11C00661C5A /* RestaurantNetError.swift in Sources */,
 				785776982969BF5300F2A739 /* PersonVC.swift in Sources */,
 				782CFCCB2969C49200661C5A /* RecentVC.swift in Sources */,
 			);

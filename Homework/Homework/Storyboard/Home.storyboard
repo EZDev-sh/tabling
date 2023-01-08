@@ -61,9 +61,28 @@
                     <view key="view" contentMode="scaleToFill" id="Adu-G1-Lnk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dkr-Yb-waC">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Q7k-qZ-Jg6" id="VtW-ND-9xq"/>
+                                    <outlet property="delegate" destination="Q7k-qZ-Jg6" id="adB-X2-gsa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fMN-yk-Jar"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dkr-Yb-waC" firstAttribute="leading" secondItem="fMN-yk-Jar" secondAttribute="leading" id="BPc-PH-EFa"/>
+                            <constraint firstItem="dkr-Yb-waC" firstAttribute="top" secondItem="fMN-yk-Jar" secondAttribute="top" id="HSh-u5-WcM"/>
+                            <constraint firstItem="fMN-yk-Jar" firstAttribute="bottom" secondItem="dkr-Yb-waC" secondAttribute="bottom" id="Ufa-ol-jKO"/>
+                            <constraint firstItem="fMN-yk-Jar" firstAttribute="trailing" secondItem="dkr-Yb-waC" secondAttribute="trailing" id="Ygl-VV-DxR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="saveTableView" destination="dkr-Yb-waC" id="V3Q-Zx-hUF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8R-cV-F7N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,9 +95,28 @@
                     <view key="view" contentMode="scaleToFill" id="3t9-Na-hHL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kMA-dJ-jgc">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="0kN-FH-uWC" id="fjg-rk-cOI"/>
+                                    <outlet property="delegate" destination="0kN-FH-uWC" id="F1h-gX-ziU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="kcJ-dn-d2e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kMA-dJ-jgc" firstAttribute="top" secondItem="kcJ-dn-d2e" secondAttribute="top" id="3Rb-Kv-z3K"/>
+                            <constraint firstItem="kcJ-dn-d2e" firstAttribute="trailing" secondItem="kMA-dJ-jgc" secondAttribute="trailing" id="9Ye-Ib-POz"/>
+                            <constraint firstItem="kMA-dJ-jgc" firstAttribute="leading" secondItem="kcJ-dn-d2e" secondAttribute="leading" id="TnE-tA-cN3"/>
+                            <constraint firstItem="kcJ-dn-d2e" firstAttribute="bottom" secondItem="kMA-dJ-jgc" secondAttribute="bottom" id="aBq-mT-ZTQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recentTableView" destination="kMA-dJ-jgc" id="eyy-hw-p66"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NUv-SX-KPG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,6 +224,7 @@
         <!--관심매장-->
         <scene sceneID="opg-NG-MYc">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J27-2x-Cz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z5a-rD-ku0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="관심매장" image="heart" catalog="system" selectedImage="heart.fill" id="C9f-oC-lap"/>
                     <toolbarItems/>
@@ -198,7 +237,6 @@
                         <segue destination="3G2-Gl-2Nv" kind="relationship" relationship="rootViewController" id="ftS-0z-V02"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J27-2x-Cz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1636" y="782"/>
         </scene>
