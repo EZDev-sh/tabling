@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SaveVC: UIViewController {
+class SaveVC: BaseVC {
     @IBOutlet weak var saveTableView: UITableView!
     
     private var saveList: [Restaurant] = []
@@ -31,10 +31,8 @@ extension SaveVC {
             self.saveList = list
             self.saveTableView.reloadData()
             
-        }, failedHandler: { errorRes in
-            debugPrint("@@@ error type: \(errorRes)")
-            debugPrint("@@@ error message: \(errorRes.message)")
-            
+        }, failedHandler: { error in
+            self.onRestaurantNetError(error: error)
         })
     }
 }

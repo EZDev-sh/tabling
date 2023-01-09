@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RecentVC: UIViewController {
+class RecentVC: BaseVC {
     @IBOutlet weak var recentTableView: UITableView!
     
     private var recentlyList: [Restaurant] = []
@@ -32,10 +32,8 @@ extension RecentVC {
             self.recentlyList = list
             self.recentTableView.reloadData()
             
-        }, failedHandler: { errorRes in
-            debugPrint("@@@ error type: \(errorRes)")
-            debugPrint("@@@ error message: \(errorRes.message)")
-            
+        }, failedHandler: { error in
+            self.onRestaurantNetError(error: error)
         })
     }
 }
